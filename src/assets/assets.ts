@@ -65,6 +65,10 @@ Tengo experiencia desarrollando proyectos para turismo, ocio…`;
 
 export const contact = {
     email: 'ruben.dopico.dev@gmail.com',
-    tlfo: '620734859',
-    linkedin: 'https://www.linkedin.com/in/rub%C3%A9n-dopico-novo/'
+    tlfo: '620734859'
+}
+
+export const moreAboutMe = {
+    linkedin: 'https://www.linkedin.com/in/rub%C3%A9n-dopico-novo/',
+    github: 'https://github.com/ruben-dev98'
 }
