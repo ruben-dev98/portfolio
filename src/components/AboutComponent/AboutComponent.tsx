@@ -1,12 +1,20 @@
 import { aboutMe, moreAboutMe } from "../../assets/assets";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { Link } from '@mui/material';
 
 const AboutComponent = () => {
     return (
-        <section>
-            {aboutMe}
-            Donde encontrarme: 
-            ICONO GITHUB - <a href={moreAboutMe.github}>{moreAboutMe.github}</a>
-            ICONO LINKEDIN - <a href={moreAboutMe.linkedin}>{moreAboutMe.linkedin}</a>
+        <section id="about">
+            <h1>Sobre Mí</h1>
+            <p>{aboutMe}</p>
+            <p>
+                Donde encontrarme:
+                <p>
+                    <Link href={moreAboutMe.github}><FaGithub /></Link>
+                    <Link href={moreAboutMe.linkedin}><FaLinkedin /></Link>
+                </p>
+            </p>
         </section>
     )
 }

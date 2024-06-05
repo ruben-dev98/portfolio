@@ -1,6 +1,7 @@
 const ContactComponent = () => {
     return (
-        <section>
+        <section id="contact">
+            <h1>Contáctame</h1>
             <form action="#" onSubmit={(event) => event.preventDefault} method="post">
                 <div>
                     <label htmlFor="name">Nombre</label>
