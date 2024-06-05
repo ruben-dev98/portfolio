@@ -1,57 +1,38 @@
 export const projects = [
     {
-        title: 'Galería Imágenes API Unplash',
-        desc: `Proyecto realizado con React y Redux para mostrar fotos con la Api de Unplash.
-        En esta aplicación se pueden guardar las fotos que tu quieras en favoritos, 
-        buscar con el buscador en la propia Api de Unplash o por descripción en tus fotos guardadas.
-        Cuando se encuentre en sus fotos guardadas podrá ordenarlas por diferentes categorías como los likes o su tamaño, tanto horizontal como vetical.
-        Se incluye paginación a la hora de buscar en la Api o en la página para las fotos guardadas.`,
-        links: {
-            github: 'https://github.com/ruben-dev98/My-Gallery-React',
-            deploy: 'http://alphotogallery.s3-website.eu-west-3.amazonaws.com/'
-        }
-    },
-    {
-        title: 'Dashboard Hotel Miranda',
-        desc: `Proyecto realizado con React y Redux con Api propia, realizado para la gestión de un hotel.
-        Consta de un sistema de autentificación por medio de un JWT (Json Web Token)
-        que solo le será concedido a los empleados que estén registrados en la base de datos, realizada con MongoDB.
-        En esta aplicación se puede realizar la alta de Habitaciones, Empleados o Reservas,
-        como su posterior edición o eliminación si fuese necesario, con su correspondiente feedback al usuario.
-        Todo esto controlado por la Api que fue realizada con Express y Node.`,
-        links: {
-            github: 'https://github.com/ruben-dev98/Hotel-Miranda-Dashboard',
-            deploy: 'http://dashboard-miranda-hotel.s3-website.eu-west-3.amazonaws.com/'
-        }
-    },
-    {
-        title: 'Website Miranda Hotel',
-        desc: `Web para una cadena de hoteles realizado con HTML, CSS y JS.
-        Se utilizaron librerías como SwiperJS para realizar carruseles de imágenes para poder visualizar diferentes habitaciones del hotel.
-        Consta de diferentes páginas estáticas que muestran curiosidades e información del hotel, que fueron cambiados a dinámicos en la siguiente implementación.`,
-        links: {
-            github: 'https://github.com/ruben-dev98/Hotel-Miranda-Website',
-            deploy: 'https://ruben-dev98.github.io/Hotel-Miranda-Website/'
-        }
-    },
-    {
+        img: 'https://portfolio-image-s3.s3.eu-west-3.amazonaws.com/website.png',
         title: 'Website Miranda Hotel Laravel',
-        desc: `Web para una cadena de hoteles realizada con Laravel y CSS.
-        Se utilizaron librerías como SwiperJS para realizar carruseles de imágenes para poder visualizar diferentes habitaciones del hotel.
-        Consta de diferentes páginas dinámicas que muestran curiosidades e información del hotel,`,
+        desc: `Web para una cadena de hoteles realizada con Laravel y CSS, utilizando MySQL como base de datos.`,
         links: {
             github: 'https://github.com/ruben-dev98/miranda-web-laravel',
             deploy: 'http://13.36.173.2/'
         }
     },
     {
+        img: 'https://portfolio-image-s3.s3.eu-west-3.amazonaws.com/dash.png',
+        title: 'Dashboard Hotel Miranda',
+        desc: `Proyecto realizado con React y Redux con Api propia, realizado para la gestión de un hotel.`,
+        links: {
+            github: 'https://github.com/ruben-dev98/Hotel-Miranda-Dashboard',
+            deploy: 'http://dashboard-miranda-hotel.s3-website.eu-west-3.amazonaws.com/'
+        }
+    },
+    {
+        img: 'https://portfolio-image-s3.s3.eu-west-3.amazonaws.com/api.png',
         title: 'API Dashboard Hotel Miranda',
-        desc: `API para la gestión de la aplicación de Dashboard Miranda Hotel realizada con Node, Express y MongoDB.
-        En esta aplicación se realizaron endpoints para poder visualizar, editar, añadir y borrar los diferentes modelos de la base de datos.
-        Como por ejemplo los empleados o las habitaciones de dicho hotel.`,
+        desc: `API para la gestión de la aplicación de Dashboard Miranda Hotel realizada con Node, Express y MongoDB.`,
         links: {
             github: 'https://github.com/ruben-dev98/Node-Express',
             deploy: 'https://9fa3bmerkd.execute-api.eu-west-3.amazonaws.com/dev/'
+        }
+    },
+    {
+        img: 'https://portfolio-image-s3.s3.eu-west-3.amazonaws.com/gallery.png',
+        title: 'Galería Imágenes',
+        desc: `Proyecto realizado con React y Redux para mostrar fotos con la Api de Unplash.`,
+        links: {
+            github: 'https://github.com/ruben-dev98/My-Gallery-React',
+            deploy: 'http://alphotogallery.s3-website.eu-west-3.amazonaws.com/'
         }
     },
 ]
