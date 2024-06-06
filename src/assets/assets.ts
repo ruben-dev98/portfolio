@@ -1,4 +1,8 @@
+import { FaGithub } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa6';
+
 export const projects = [
+
     {
         img: 'https://portfolio-image-s3.s3.eu-west-3.amazonaws.com/website.png',
         title: 'Website Miranda Hotel Laravel',
@@ -49,7 +53,51 @@ export const contact = {
     tlfo: '620734859'
 }
 
-export const moreAboutMe = {
-    linkedin: 'https://www.linkedin.com/in/rub%C3%A9n-dopico-novo/',
-    github: 'https://github.com/ruben-dev98'
-}
+export const social = [
+    {
+        link: 'https://github.com/ruben-dev98',
+        icon: FaGithub
+
+    },
+    {
+        link: 'https://www.linkedin.com/in/rub%C3%A9n-dopico-novo/',
+        icon: FaLinkedin
+    }
+
+]
+
+export const stack = [
+    {
+        name: 'PHP',
+        icon: ''
+    },
+    {
+        name: 'Laravel',
+        icon: ''
+    },
+    {
+        name: 'JavaScript',
+        icon: ''
+    },
+    {
+        name: 'TypeScript',
+        icon: ''
+    },
+    {
+        name: 'React',
+        icon: ''
+    },
+    {
+        name: 'Java',
+        icon: ''
+    },
+    {
+        name: 'MySQL',
+        icon: ''
+    },
+    {
+        name: 'MongoDB',
+        icon: ''
+    },
+
+]

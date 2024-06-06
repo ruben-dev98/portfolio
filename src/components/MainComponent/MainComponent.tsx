@@ -1,8 +1,9 @@
 
-import ContactComponent from '../ContactComponent/ContactComponent';
 import ProjectsComponent from '../ProjectsComponent/ProjectsComponent';
 import AboutComponent from './../AboutComponent/AboutComponent';
+import StackComponent from './../StackComponent/StackComponent';
 import { styled } from 'styled-components';
+
 
 const MainStyled = styled.main`
     width: 80%;
@@ -11,7 +12,7 @@ const MainStyled = styled.main`
 
     .section__projects {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         grid-auto-rows: minmax(100px, auto);
     }
@@ -73,8 +74,8 @@ const MainComponent = () => {
     return (
         <MainStyled>
             <AboutComponent/>
+            <StackComponent/>
             <ProjectsComponent/>
-            <ContactComponent/>
         </MainStyled>
     );
 }
