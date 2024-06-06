@@ -1,5 +1,8 @@
-import { FaGithub } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa6';
+import { BiLogoJavascript } from 'react-icons/bi';
+import { FaLaravel, FaGithub, FaLinkedin, FaJava, FaPhp, FaReact } from "react-icons/fa";
+import { GrMysql } from 'react-icons/gr';
+import { TbBrandTypescript } from 'react-icons/tb';
+import { DiMongodb } from "react-icons/di";
 
 export const projects = [
 
@@ -69,35 +72,35 @@ export const social = [
 export const stack = [
     {
         name: 'PHP',
-        icon: ''
+        icon: FaPhp
     },
     {
         name: 'Laravel',
-        icon: ''
+        icon: FaLaravel
     },
     {
         name: 'JavaScript',
-        icon: ''
+        icon: BiLogoJavascript
     },
     {
         name: 'TypeScript',
-        icon: ''
+        icon: TbBrandTypescript
     },
     {
         name: 'React',
-        icon: ''
+        icon: FaReact
     },
     {
         name: 'Java',
-        icon: ''
+        icon: FaJava
     },
     {
         name: 'MySQL',
-        icon: ''
+        icon: GrMysql
     },
     {
         name: 'MongoDB',
-        icon: ''
+        icon: DiMongodb
     },
 
 ]

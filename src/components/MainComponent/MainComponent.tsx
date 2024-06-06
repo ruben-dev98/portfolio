@@ -10,9 +10,16 @@ const MainStyled = styled.main`
     margin: 0 auto;
     height: 100vh;
 
-    .section__projects {
+    .section__projects, .section__stack {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    .section__stack {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         gap: 10px;
         grid-auto-rows: minmax(100px, auto);
     }
