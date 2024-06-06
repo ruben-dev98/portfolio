@@ -6,73 +6,78 @@ import { styled } from 'styled-components';
 
 
 const MainStyled = styled.main`
-    width: 80%;
-    margin: 0 auto;
-    height: 100vh;
+    
 
-    .section__projects, .section__stack {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        grid-auto-rows: minmax(100px, auto);
-    }
+    @media (min-width: 1000px) {
+        width: 80%;
+        margin: 0 auto;
+        height: auto;
 
-    .section__stack {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
-        grid-auto-rows: minmax(100px, auto);
-    }
+        .section__projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            grid-auto-rows: minmax(100px, auto);
+        }
 
-    section {
-        padding: 30px 10px;
-        width: 100%;
-        font-size: 1rem;
-        color: #222;
+        .section__stack {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            grid-auto-rows: minmax(50px, auto);
+        }
 
-        form {
+        section {
+            padding: 0px 10px;
+            margin: 30px 0px;
             width: 100%;
+            font-size: 1rem;
+            color: #222;
 
-            input:last-child {
-                width: 90%;
-            }
-
-            div{
-                display: inline-block;
-                width: 50%;
-                margin: 10px 0;
-
-                &:nth-child(3), &:last-child {
-                    width: 100%;
-                }
-            }
-
-            input {
-                appearance: none;
-                display: block;
-                width: auto;
-                padding: 10px;
-                background-color: #f8f8f8;
-                border-radius: 10px;
-            
-                &:focus {
-                    border-color: aliceblue;
-                }
-            }
-
-            textarea {
-                display: block;
+            form {
                 width: 100%;
-                padding: 10px;
-                border-radius: 10px;
-                background-color: #f8f8f8;
-            }
 
-            label {
-                display: block;
-                font-size: 1.3rem;
-                color: #222;
-                margin-bottom: 7px;
+                input:last-child {
+                    width: 90%;
+                }
+
+                div{
+                    display: inline-block;
+                    width: 50%;
+                    margin: 10px 0;
+
+                    &:nth-child(3), &:last-child {
+                        width: 100%;
+                    }
+                }
+
+                input {
+                    appearance: none;
+                    display: block;
+                    width: auto;
+                    padding: 10px;
+                    background-color: #f8f8f8;
+                    border-radius: 10px;
+                
+                    &:focus {
+                        border-color: aliceblue;
+                    }
+                }
+
+                textarea {
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 10px;
+                    background-color: #f8f8f8;
+                }
+
+                label {
+                    display: block;
+                    font-size: 1.3rem;
+                    color: #222;
+                    margin-bottom: 7px;
+                }
             }
         }
     }
@@ -82,9 +87,9 @@ const MainComponent = () => {
     return (
         <MainStyled>
             <AboutComponent>
-                <StackComponent/>
+                <StackComponent />
             </AboutComponent>
-            <ProjectsComponent/>
+            <ProjectsComponent />
         </MainStyled>
     );
 }
