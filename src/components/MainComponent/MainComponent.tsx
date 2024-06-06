@@ -25,6 +25,7 @@ const MainStyled = styled.main`
     }
 
     section {
+        padding: 30px 10px;
         width: 100%;
         font-size: 1rem;
         color: #222;
@@ -80,8 +81,9 @@ const MainStyled = styled.main`
 const MainComponent = () => {
     return (
         <MainStyled>
-            <AboutComponent/>
-            <StackComponent/>
+            <AboutComponent>
+                <StackComponent/>
+            </AboutComponent>
             <ProjectsComponent/>
         </MainStyled>
     );

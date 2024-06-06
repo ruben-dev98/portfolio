@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const HeaderStyled = styled.header`
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: green;
     position: fixed;
 
     nav {
@@ -23,8 +23,6 @@ const HeaderStyled = styled.header`
 
 const TitleStyled = styled.div<{ $bg?: string }>`
     width: 100%;
-    margin: 0;
-    padding: 0;
     height: 300px;
     background-image: url('https://portfolio-image-s3.s3.eu-west-3.amazonaws.com/bg.png');
     background-repeat: no-repeat;
@@ -50,7 +48,6 @@ const HeaderComponent = () => {
                 <nav>
                     <a href="#about">Sobre Mí</a>
                     <a href="#projects">Proyectos</a>
-                    <a href="#contact">Contacto</a>
                 </nav>
             </HeaderStyled>
             <TitleStyled>
