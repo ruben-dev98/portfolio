@@ -4,11 +4,10 @@ import { studies } from "../../assets/assets";
 
 const StudiesComponent = () => {
 
-
     return (
         <>
-            <h1>Mis Estudios</h1>
-            <section id="studies" className="section__studies">
+            <h1 id="studies">Mis Estudios</h1>
+            <section className="section__studies">
                 {studies &&
                     studies.map((study, index) => {
                         return (

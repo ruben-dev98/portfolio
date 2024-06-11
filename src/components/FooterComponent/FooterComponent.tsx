@@ -14,6 +14,7 @@ const FooterStyled = styled.footer`
         width: 100%;
 
         h2 {
+            font-family: "Tiny5", sans-serif;
             line-height: 1.75rem;
             letter-spacing: 0.15rem;
             font-size: 1.55rem;
@@ -44,7 +45,7 @@ const FooterStyled = styled.footer`
             font-size: 3.1rem;
             line-height: 3.75rem;
         }
-        
+
     }
     
 `;

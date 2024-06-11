@@ -7,7 +7,9 @@ const HeaderStyled = styled.header`
 
     nav {
         display: none;
+        
         a {
+            font-family: "Tiny5", sans-serif;
             padding: 12px;
             color: #fff;
             text-decoration: none;
@@ -37,6 +39,7 @@ const TitleStyled = styled.div`
     
 
     header {
+        font-family: "Tiny5", sans-serif;
         text-align: center;
         color: #fff;
         text-transform: uppercase;

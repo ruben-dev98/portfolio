@@ -13,12 +13,20 @@ const MainStyled = styled.main`
     height: auto;
     padding: 50px 0;
 
+    h1 {
+        font-family: "Tiny5", sans-serif;
+    }
+
     section {
         padding: 0 10px;
         margin: 40px 0;
         width: 100%;
         font-size: 1rem;
         color: #222;
+
+        .MuiTypography-root {
+            font-family: "Roboto Mono", monospace;
+        }
     }
 
     .section__projects, .section__experience, .section__stack, .section__studies {

@@ -1,13 +1,14 @@
 import { Card, CardContent, Typography } from "@mui/material";
 import { experiencie } from "../../assets/assets";
 
+
 const ExperienceComponent = () => {
 
 
     return (
         <>
-            <h1>Mi Experiencia Laboral</h1>
-            <section id="experience" className="section__experience">
+            <h1 id="experience">Mi Experiencia Laboral</h1>
+            <section className="section__experience">
                 {experiencie &&
                     experiencie.map((exp, index) => {
                         return (

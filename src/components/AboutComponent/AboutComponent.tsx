@@ -8,8 +8,8 @@ interface AboutComponentProps {
 const AboutComponent = ({children}: AboutComponentProps) => {
     return (
         <>
-            <h1>Sobre Mí</h1>
-            <section id="about">
+            <h1 id="about">Sobre Mí</h1>
+            <section>
                 <p>{aboutMe}</p>
             </section>
             {children}

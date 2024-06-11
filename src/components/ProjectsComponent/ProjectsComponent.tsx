@@ -8,8 +8,8 @@ import { CardActions, Link } from '@mui/material';
 const ProjectsComponent = () => {
     return (
         <>
-            <h1>Proyectos</h1>
-            <section id="projects" className="section__projects">
+            <h1 id="projects">Proyectos</h1>
+            <section className="section__projects">
                 {projects &&
                     projects.map((project, index) => {
                         return (
