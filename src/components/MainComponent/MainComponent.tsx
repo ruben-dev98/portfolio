@@ -1,5 +1,7 @@
 
+import ExperienceComponent from '../ExperienceComponent/ExperienceComponent';
 import ProjectsComponent from '../ProjectsComponent/ProjectsComponent';
+import StudiesComponent from '../StudiesComponent/StudiesComponent';
 import AboutComponent from './../AboutComponent/AboutComponent';
 import StackComponent from './../StackComponent/StackComponent';
 import { styled } from 'styled-components';
@@ -23,6 +25,20 @@ const MainStyled = styled.main`
         .section__stack {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            grid-auto-rows: minmax(50px, auto);
+        }
+
+        .section__experience {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            grid-auto-rows: minmax(50px, auto);
+        }
+
+        .section__studies {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 10px;
             grid-auto-rows: minmax(50px, auto);
         }
@@ -90,6 +106,8 @@ const MainComponent = () => {
                 <StackComponent />
             </AboutComponent>
             <ProjectsComponent />
+            <StudiesComponent/>
+            <ExperienceComponent/>
         </MainStyled>
     );
 }

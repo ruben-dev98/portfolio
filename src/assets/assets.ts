@@ -104,3 +104,49 @@ export const stack = [
     },
 
 ]
+
+export const studies = [
+    {
+        org: 'Oxygen Academy & Recruiting',
+        name: 'Training Fullstack Developer',
+        date: 'Ene. 2024 - Feb. 2024',
+        desc: 'Formación en el desarrollo de proyectos mentorizado por desarrolladores Senior'
+    },
+    {
+        org: 'CIFP Rodolfo Ucha Piñeiro',
+        name: 'Desarrollo de Aplicaciones Web',
+        date: 'Sept. 2021 - Sept. 2022',
+        desc: 'Formación en HTML, CSS, Javascript, PHP con Laravel y MySQL'
+    },
+    {
+        org: 'CIFP Rodolfo Ucha Piñeiro',
+        name: 'Desarrollo de Aplicaciones Multiplataforma',
+        date: 'Sept. 2016 - Jun. 2020',
+        desc: 'Formación en HTML, CSS, Java y MySQL'
+    }
+];
+
+export const experiencie = [
+    {
+        org: 'Oxygen Workspace',
+        name: 'Fullstack Developer',
+        date: 'Feb. 2024 - Actualidad',
+        desc: `Desarrollo de aplicación web de gestión hotelera.
+        Programada individualmente de principio a fin: sitio web y panel de control (gestión de disponibilidad, reservas, habitaciones y usuarios)
+        HTML, CSS Mobile First, JS con React, Typescript, Testing, SQL, PHP con Laravel.`
+    },
+    {
+        org: 'Fundación Exponav',
+        name: 'Prácticas Desarrollador Web',
+        date: 'Abr. 2022 - Ene. 2023',
+        desc: `Maquetación ATOM (Aplicación Web escrita con Symfony y PHP basada en estandares de descripción archivística).
+        Refactorización del código de aplicaciones con el lenguaje PHP.
+        Desarrollo del front end y back end de una aplicación para visitas al museo con audios, con vistas para administración y usuarios final. HTML, CSS, JS y PHP`
+    },
+    {
+        org: 'MiChollo',
+        name: 'Prácticas Desarrollador Web',
+        date: 'Ene. 2021 - Abr. 2021',
+        desc: 'Refactorización del código de la API, para crear puntos de llamada que son utilizados en la parte cliente.'
+    }
+];
