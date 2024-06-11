@@ -3,6 +3,10 @@
     padding: 0;
 }
 
-body {
+html {
+    scroll-behavior: smooth;
+}
+
+body, .root {
     width: 100%;
 }

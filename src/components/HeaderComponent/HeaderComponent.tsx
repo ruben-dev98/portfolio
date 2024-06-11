@@ -8,7 +8,7 @@ const HeaderStyled = styled.header`
     nav {
         display: none;
         a {
-            padding: 0 12px 0 0;
+            padding: 12px;
             color: #fff;
             text-decoration: none;
             font-size: 1.5rem;
@@ -16,6 +16,7 @@ const HeaderStyled = styled.header`
     }
     
     @media (min-width: 1000px) {
+        
         nav {
             margin: 0 0 0 30px;
             display: flex;
@@ -32,13 +33,11 @@ const TitleStyled = styled.div`
     background-position: center;
     background-size: cover;
     height: 300px;
+    padding: 16px 0 0 0;
     
 
     header {
         text-align: center;
-        margin: 0 auto;
-        display: inline-block;
-        vertical-align: middle;
         color: #fff;
         text-transform: uppercase;
     }
@@ -68,9 +67,7 @@ const DivStyled = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 30px;
+    margin: 0 auto 16px auto;
     
     @media (min-width: 1000px) {
         margin: 0;
@@ -79,12 +76,16 @@ const DivStyled = styled.div`
 `;
 
 const HeaderComponent = () => {
+    
     return (
         <>
             <HeaderStyled>
                 <nav>
-                    <a href="#about">Sobre Mí</a>
+                    <a href="#about">Acerca</a>
                     <a href="#projects">Proyectos</a>
+                    <a href="#studies">Estudios</a>
+                    <a href="#experiences">Experiencia</a>
+                    
                 </nav>
             </HeaderStyled>
             <TitleStyled>

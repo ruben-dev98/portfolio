@@ -3,6 +3,7 @@ import { FaLaravel, FaGithub, FaLinkedin, FaJava, FaPhp, FaReact } from "react-i
 import { GrMysql } from 'react-icons/gr';
 import { TbBrandTypescript } from 'react-icons/tb';
 import { DiMongodb } from "react-icons/di";
+import { IoMdMail } from "react-icons/io";
 
 export const projects = [
 
@@ -65,6 +66,10 @@ export const social = [
     {
         link: 'https://www.linkedin.com/in/rub%C3%A9n-dopico-novo/',
         icon: FaLinkedin
+    },
+    {
+        link: 'mailto:ruben.dopico.dev@gmail.com',
+        icon: IoMdMail
     }
 
 ]
