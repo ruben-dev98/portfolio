@@ -31,6 +31,7 @@ const MainStyled = styled.main`
 
     .section__projects, .section__experience, .section__stack, .section__studies {
         .MuiPaper-root {
+            max-width: 450px;
             margin: 30px 0;
         }
     }

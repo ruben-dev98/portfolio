@@ -13,7 +13,7 @@ const ProjectsComponent = () => {
                 {projects &&
                     projects.map((project, index) => {
                         return (
-                            <Card sx={{ maxWidth: 450 }} key={index}>
+                            <Card key={index}>
                                 <CardMedia
                                     component="img"
                                     height="140"

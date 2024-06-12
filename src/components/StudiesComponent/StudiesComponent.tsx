@@ -1,7 +1,6 @@
 import { Card, CardContent, Typography } from "@mui/material";
 import { studies } from "../../assets/assets";
 
-
 const StudiesComponent = () => {
 
     return (
@@ -11,7 +10,7 @@ const StudiesComponent = () => {
                 {studies &&
                     studies.map((study, index) => {
                         return (
-                            <Card sx={{ maxWidth: 450 }} key={index}>
+                            <Card key={index}>
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="div">
                                         {study.name}<br/>{study.org} 

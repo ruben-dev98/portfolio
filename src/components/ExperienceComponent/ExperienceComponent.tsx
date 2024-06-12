@@ -12,7 +12,7 @@ const ExperienceComponent = () => {
                 {experiencie &&
                     experiencie.map((exp, index) => {
                         return (
-                            <Card sx={{ maxWidth: 450 }} key={index}>
+                            <Card key={index}>
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="div">
                                         {exp.name}<br/>{exp.org} 
