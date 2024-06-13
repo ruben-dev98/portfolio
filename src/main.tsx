@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import MainPage from './page/MainPage.tsx'
+import App from './App.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <MainPage />
+    <App></App>
   </React.StrictMode>,
 )
+

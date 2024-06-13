@@ -5,8 +5,8 @@ import React from 'react';
 
 const FooterStyled = styled.footer`
     padding: 40px 0;
-    background-color: #230529;
-    color: #fff;
+    background-color: ${props => props.theme && props.theme.secondary};
+    color: ${props => props.theme && props.theme.text_main};
 
     header {
         text-align: center;
@@ -32,7 +32,7 @@ const FooterStyled = styled.footer`
                 a {
                     font-size: 40px;
                     padding: 8px;
-                    color: #fff;
+                    color: ${props => props.theme && props.theme.text_main};
                 }
             }
         }

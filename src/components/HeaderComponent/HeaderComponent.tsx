@@ -1,8 +1,11 @@
-import styled from "styled-components";
+import styled, { ThemeContext } from "styled-components";
+import { handleToggleTheme } from "../../helpers/toggleTheme";
+import { FaAffiliatetheme } from "react-icons/fa";
+import { Dispatch, SetStateAction, useContext } from "react";
 
 const HeaderStyled = styled.header`
     width: 100%;
-    background-color: #230529;
+    background-color: ${props => props.theme && props.theme.secondary};;
     position: fixed;
 
     nav {
@@ -11,13 +14,16 @@ const HeaderStyled = styled.header`
         a {
             font-family: "Tiny5", sans-serif;
             padding: 12px;
-            color: #fff;
+            color: ${props => props.theme && props.theme.text_main};
             text-decoration: none;
             font-size: 1.5rem;
         }
     }
     
     @media (min-width: 1000px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         
         nav {
             margin: 0 0 0 30px;
@@ -41,7 +47,7 @@ const TitleStyled = styled.div`
     header {
         font-family: "Tiny5", sans-serif;
         text-align: center;
-        color: #fff;
+        color: ${props => props.theme && props.theme.text_main};
         text-transform: uppercase;
     }
     
@@ -78,8 +84,24 @@ const DivStyled = styled.div`
     }
 `;
 
+const IconStyled = styled.li<{ $visibleLateral?: boolean; }>`
+    cursor: pointer;
+    svg {
+        width: 28px;
+        height: 28px;
+        fill: ${props => props.theme && props.theme.text_main};
+
+        path {
+            fill: ${props => props.theme && props.theme.text_main};
+        }
+    }
+`;
+
 const HeaderComponent = () => {
-    
+
+    const themeContext = useContext(ThemeContext)!;
+    const setToggleThemeState: Dispatch<SetStateAction<string>> = themeContext.setThemeState;
+
     return (
         <>
             <HeaderStyled>
@@ -88,8 +110,10 @@ const HeaderComponent = () => {
                     <a href="#projects">Proyectos</a>
                     <a href="#studies">Estudios</a>
                     <a href="#experiences">Experiencia</a>
-                    
                 </nav>
+                <IconStyled onClick={() => handleToggleTheme(setToggleThemeState)}>
+                    <FaAffiliatetheme />
+                </IconStyled>
             </HeaderStyled>
             <TitleStyled>
                 <DivStyled></DivStyled>

@@ -1,5 +1,0 @@
-const themeContext = {};
-
-const ThemeProvider = () => {
-    
-}

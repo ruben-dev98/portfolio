@@ -15,6 +15,7 @@ const MainStyled = styled.main`
 
     h1 {
         font-family: "Tiny5", sans-serif;
+        color: ${props => props.theme && props.theme.text};
     }
 
     section {
@@ -22,7 +23,7 @@ const MainStyled = styled.main`
         margin: 40px 0;
         width: 100%;
         font-size: 1rem;
-        color: #222;
+        color: ${props => props.theme && props.theme.text_secondary};
 
         .MuiTypography-root {
             font-family: "Roboto Mono", monospace;
