@@ -7,7 +7,7 @@ const ExperienceComponent = () => {
 
     return (
         <>
-            <h1 id="experience">Mi Experiencia Laboral</h1>
+            <h1 id="experiences">Mi Experiencia Laboral</h1>
             <section className="section__experience">
                 {experiencie &&
                     experiencie.map((exp, index) => {
