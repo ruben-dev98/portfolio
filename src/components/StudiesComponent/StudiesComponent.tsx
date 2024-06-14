@@ -15,7 +15,7 @@ const StudiesComponent = () => {
                                     <Typography gutterBottom variant="h5" component="div">
                                         {study.name}<br/>{study.org} 
                                     </Typography>
-                                    <Typography variant="body2" color="text.secondary">
+                                    <Typography variant="body2">
                                         {study.date} <br/> {study.desc}
                                     </Typography>
                                 </CardContent>

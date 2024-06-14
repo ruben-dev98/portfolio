@@ -17,7 +17,7 @@ const ExperienceComponent = () => {
                                     <Typography gutterBottom variant="h5" component="div">
                                         {exp.name}<br/>{exp.org} 
                                     </Typography>
-                                    <Typography variant="body2" color="text.secondary">
+                                    <Typography variant="body2">
                                         {exp.date}<br/>{exp.desc}
                                     </Typography>
                                 </CardContent>

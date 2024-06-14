@@ -87,8 +87,8 @@ const DivStyled = styled.div`
 const IconStyled = styled.li<{ $visibleLateral?: boolean; }>`
     cursor: pointer;
     svg {
-        width: 28px;
-        height: 28px;
+        width: 20px;
+        height: 20px;
         fill: ${props => props.theme && props.theme.text_main};
 
         path {
