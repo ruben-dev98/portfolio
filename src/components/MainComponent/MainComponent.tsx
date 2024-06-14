@@ -35,12 +35,18 @@ const MainStyled = styled.main`
     }
 
     .section__projects, .section__experience, .section__stack, .section__studies {
+        
         .MuiPaper-root {
             max-width: 450px;
             margin: 30px 0;
             background-color: ${props => props.theme && props.theme.main};
             color: ${props => props.theme && props.theme.text};
             box-shadow: 0px 2px 1px -1px ${props => props.theme && props.theme.text},0px 1px 1px 0px ${props => props.theme && props.theme.text},0px 1px 3px 0px ${props => props.theme && props.theme.text};
+        }
+
+        a {
+            color: ${props => props.theme && props.theme.text};
+            text-decoration-color: ${props => props.theme && props.theme.text};
         }
     }
 

@@ -1,17 +1,20 @@
 import styled, { ThemeContext } from "styled-components";
 import { handleToggleTheme } from "../../helpers/toggleTheme";
 import { FaAffiliatetheme } from "react-icons/fa";
-import { Dispatch, SetStateAction, useContext } from "react";
+import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
+import { Dispatch, SetStateAction, useContext, useState } from "react";
+import { handleToggleHeader } from "../../helpers/toggleHeader";
 
-const HeaderStyled = styled.header`
+const HeaderStyled = styled.header<{ $header?: boolean }>`
     width: 100%;
     background-color: ${props => props.theme && props.theme.secondary};;
     position: fixed;
 
     nav {
-        display: none;
-        
+        display: ${props => props.$header ? 'block' : 'none'};
+
         a {
+            display: block;
             font-family: "Tiny5", sans-serif;
             padding: 12px;
             color: ${props => props.theme && props.theme.text_main};
@@ -24,6 +27,10 @@ const HeaderStyled = styled.header`
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .toggle__header {
+            display: none;
+        }
         
         nav {
             margin: 0 0 0 30px;
@@ -31,6 +38,10 @@ const HeaderStyled = styled.header`
             align-items: center;
             justify-content: start;
             gap: 12px;
+
+            a {
+                display: inline-block;
+            }
         }
     }
 `;
@@ -41,7 +52,7 @@ const TitleStyled = styled.div`
     background-position: center;
     background-size: cover;
     height: 300px;
-    padding: 16px 0 0 0;
+    padding: 50px 0 0 0;
     
 
     header {
@@ -52,6 +63,7 @@ const TitleStyled = styled.div`
     }
     
     @media (min-width: 1000px) {
+        padding: 16px 0 0 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -84,11 +96,12 @@ const DivStyled = styled.div`
     }
 `;
 
-const IconStyled = styled.li<{ $visibleLateral?: boolean; }>`
+const IconStyled = styled.span<{ $visibleLateral?: boolean; }>`
     cursor: pointer;
+    margin: 10px 10px;
     svg {
-        width: 20px;
-        height: 20px;
+        width: 28px;
+        height: 28px;
         fill: ${props => props.theme && props.theme.text_main};
 
         path {
@@ -101,19 +114,26 @@ const HeaderComponent = () => {
 
     const themeContext = useContext(ThemeContext)!;
     const setToggleThemeState: Dispatch<SetStateAction<string>> = themeContext.setThemeState;
+    const [header, setHeader] = useState(false);
 
     return (
         <>
-            <HeaderStyled>
+            <HeaderStyled $header={header}>
+                <IconStyled className="toggle__header" onClick={() => handleToggleHeader(setHeader)}>
+                    {
+                        header ? <RxCross1 /> : <RxHamburgerMenu />
+                    }
+                </IconStyled>
+                <IconStyled onClick={() => handleToggleTheme(setToggleThemeState)}>
+                    <FaAffiliatetheme />
+                </IconStyled>
                 <nav>
                     <a href="#about">Acerca</a>
                     <a href="#projects">Proyectos</a>
                     <a href="#studies">Estudios</a>
                     <a href="#experiences">Experiencia</a>
                 </nav>
-                <IconStyled onClick={() => handleToggleTheme(setToggleThemeState)}>
-                    <FaAffiliatetheme />
-                </IconStyled>
+
             </HeaderStyled>
             <TitleStyled>
                 <DivStyled></DivStyled>
