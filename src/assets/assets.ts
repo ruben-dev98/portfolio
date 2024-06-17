@@ -155,3 +155,22 @@ export const experiencie = [
         desc: 'Refactorización del código de la API, para crear puntos de llamada que son utilizados en la parte cliente.'
     }
 ];
+
+export const sections = [
+    {
+        name: 'Acerca',
+        href: '#about'
+    },
+    {
+        name: 'Proyectos',
+        href: '#projects'
+    },
+    {
+        name: 'Estudios',
+        href: '#studies'
+    },
+    {
+        name: 'Experiencia',
+        href: '#experiencies'
+    }
+]

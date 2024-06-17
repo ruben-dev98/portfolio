@@ -4,6 +4,7 @@ import { FaAffiliatetheme } from "react-icons/fa";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { Dispatch, SetStateAction, useContext, useState } from "react";
 import { handleToggleHeader } from "../../helpers/toggleHeader";
+import { sections } from "../../assets/assets";
 
 const HeaderStyled = styled.header<{ $header?: boolean }>`
     width: 100%;
@@ -16,8 +17,8 @@ const HeaderStyled = styled.header<{ $header?: boolean }>`
         a {
             display: block;
             font-family: "Tiny5", sans-serif;
-            padding: 12px;
             color: ${props => props.theme && props.theme.text_main};
+            padding: 12px;
             text-decoration: none;
             font-size: 1.5rem;
         }
@@ -96,7 +97,11 @@ const DivStyled = styled.div`
     }
 `;
 
-const IconStyled = styled.span<{ $visibleLateral?: boolean; }>`
+const StyledLink = styled.a<{$isActive?: boolean}>`
+    font-weight: ${props => props.$isActive ? 'bold' : '100'};
+`;
+
+const IconStyled = styled.span`
     cursor: pointer;
     margin: 10px 10px;
     svg {
@@ -115,6 +120,11 @@ const HeaderComponent = () => {
     const themeContext = useContext(ThemeContext)!;
     const setToggleThemeState: Dispatch<SetStateAction<string>> = themeContext.setThemeState;
     const [header, setHeader] = useState(false);
+    const [currentSection, setCurrentSection] = useState('');
+
+    const handleCurrentTab = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        setCurrentSection(event.currentTarget.innerText);
+    }
 
     return (
         <>
@@ -128,10 +138,9 @@ const HeaderComponent = () => {
                     <FaAffiliatetheme />
                 </IconStyled>
                 <nav>
-                    <a href="#about">Acerca</a>
-                    <a href="#projects">Proyectos</a>
-                    <a href="#studies">Estudios</a>
-                    <a href="#experiences">Experiencia</a>
+                    {sections && sections.map((section) => {
+                        return <StyledLink onClick={(event) => handleCurrentTab(event)} $isActive={currentSection === section.name ? true : false} href={section.href}>{section.name}</StyledLink>
+                    })}
                 </nav>
 
             </HeaderStyled>
