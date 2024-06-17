@@ -171,6 +171,6 @@ export const sections = [
     },
     {
         name: 'Experiencia',
-        href: '#experiencies'
+        href: '#experiences'
     }
 ]
